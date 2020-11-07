@@ -2,12 +2,6 @@
   border-bottom: 1px solid #ececec;
   position: relative;
 }
-// helper
-// in flex containers we should use f.e. for left side (part) a certain width
-// and for right side set'flex-grow: 1;' to extend it in availsble space
-// END helper
-
-// ----- button -----
 
 .menu-button {
   display: inline-flex;
@@ -17,29 +11,25 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
 
-.menu-button .icon-close {
-  display: none;
-}
+  & .icon-close {
+    display: none;
+  }
 
-.menu-button.is-open .icon-close {
-  display: block;
-}
+  &.is-open .icon-close {
+    display: block;
+    fill: var(--accent-color);
+  }
 
-.menu-button.is-open .icon-menu {
-  display: none;
+  &.is-open .icon-menu {
+    display: none;
+  }
 }
-
-// ----- END button -----
 
 // ----- Containers -----
 .menu-container {
   z-index: 1;
-  outline: 2px solid rebeccapurple;
   background-color: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
 
   @media screen and (max-width: 767px) {
     padding: 60px 0;
@@ -49,6 +39,8 @@
     left: 0;
     width: 100%;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 
   @media screen and (min-width: 768px) {
@@ -59,10 +51,10 @@
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
-}
 
-.menu-container.is-open {
-  display: block;
+  &.is-open {
+    display: block;
+  }
 }
 
 .mob_container {
@@ -71,12 +63,12 @@
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
+    // outline: 2px solid red;
+    // width: 100%;
   }
 }
-// ----- END Containers -----
 
 .nav {
-  // outline: 2px solid orangered;
   &-list-li:not(:last-child) {
     @media screen and (min-width: 768px) {
       margin-right: 50px;
@@ -114,7 +106,6 @@
   }
 
   &-list-link:first-child {
-    // position: relative;
     color: #212121;
   }
 
@@ -127,6 +118,7 @@
 .adress-list {
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: flex-start;
   }
 }
 

@@ -4,8 +4,10 @@
   flex-wrap: wrap;
   padding-top: 34px;
 
-  &-li {
-    outline: 3px solid blueviolet;
+  &-li:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__pic {
@@ -30,7 +32,6 @@
   }
 
   &-link {
-    // display: block; --- was for desctop
     transition: box-shadow 250ms var(--timing-function);
   }
 
