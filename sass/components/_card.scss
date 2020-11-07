@@ -54,9 +54,9 @@
 }
 
 .overlay {
-  // @media screen and (max-width: 1199px) {
-  //   display: none;
-  // }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   position: absolute;
   top: 0;
   left: 0;
