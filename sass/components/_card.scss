@@ -4,10 +4,14 @@
   flex-wrap: wrap;
   padding-top: 34px;
 
-  &-li:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+  &__card2 {
+    @media screen and (max-width: 1199px) {
+      max-width: 306px;
     }
+  }
+
+  &-li:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   &__pic {

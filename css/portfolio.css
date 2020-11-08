@@ -261,10 +261,14 @@ img {
   padding-top: 34px;
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio-items-li:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .portfolio-items__card2 {
+    max-width: 306px;
   }
+}
+
+.portfolio-items-li:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio-items__pic {
@@ -665,7 +669,6 @@ img {
 }
 
 .title-dark-theme {
-  text-align: center;
   padding-bottom: 4px;
   font-weight: 700;
   font-size: 14px;
@@ -673,6 +676,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-white);
+}
+
+@media screen and (max-width: 1199px) {
+  .title-dark-theme {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1199px) {
